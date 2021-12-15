@@ -75,17 +75,16 @@ class App extends React.Component {
       );
     }
 
-    /* Uncomment lines below to render grades*/
-    /*if (this.state.buttonClicked === "grades") {
+    if (this.state.buttonClicked === "grades") {
       tabChoice = (
         <Table
-          tableNames={this.state.assignments}
-          rows={this.state.students}
+          tableNames={this.state.grades}
+          rows={this.state.students
           addFunction={this.addGrade}
           data={this.state.grades}
         />
       );
-    }*/
+    }
 
     return (
       <div>
